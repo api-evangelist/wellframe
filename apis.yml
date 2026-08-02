@@ -1,8 +1,22 @@
 aid: wellframe
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/wellframe.png
 name: Wellframe
-description: 'Wellframe is a company surfaced as a portfolio company of threshold-ventures and added to
-  the API Evangelist network as a stub for enrichment. Sector: healthcare. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Wellframe is a digital health management and member engagement company, now part of HealthEdge,
+  serving health plans and payers. Its platform combines care management, member engagement, and advocacy
+  tooling to help health plans build trusted relationships with members through a mobile app and a clinician-facing
+  dashboard. Wellframe does not publish a public developer API, developer portal, or SDKs; its integrations
+  are delivered as part of enterprise health-plan implementations rather than a self-serve API program.'
 url: https://raw.githubusercontent.com/api-evangelist/wellframe/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +26,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Healthcare
+- Digital Health
+- Care Management
+- Member Engagement
+- Health Plans
+- Payer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +42,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/wellframe-domain-security.yml
 - type: Website
-  url: http://www.wellframe.com/
+  url: https://www.wellframe.com/
+- type: Support
+  url: https://support.wellframe.com/
+- type: PrivacyPolicy
+  url: https://www.wellframe.com/site-privacy-policy/
+- type: TermsOfService
+  url: https://www.wellframe.com/eula/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
